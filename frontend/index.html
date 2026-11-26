@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IoT System - Đăng nhập</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+
+    <!-- Login branding -->
+    <section class="login-brand">
+
+        <div class="brand-mark">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 16c3-8 5-8 8 0s5 8 8 0"/>
+                <path d="M4 8c3 8 5 8 8 0s5-8 8 0"/>
+            </svg>
+        </div>
+
+        <h1>IoT System</h1>
+
+        <p>
+            Environmental Monitoring<br>
+            &amp; Light Control
+        </p>
+
+    </section>
+
+
+    <!-- Login form -->
+    <main class="login-panel">
+
+        <form
+            class="login-form"
+            onsubmit="event.preventDefault(); handleLogin();"
+        >
+
+            <h2>Đăng nhập</h2>
+
+            <label for="username">
+                Tên đăng nhập
+            </label>
+
+            <input
+                id="username"
+                type="text"
+                autocomplete="username"
+                required
+            >
+
+
+            <label for="password">
+                Mật khẩu
+            </label>
+
+            <input
+                id="password"
+                type="password"
+                autocomplete="current-password"
+                required
+            >
+
+
+            <button
+                class="btn btn-primary login-submit"
+                type="submit"
+            >
+                Đăng nhập
+            </button>
+
+
+            <p class="login-hint">
+                Đăng nhập bằng tài khoản được cấp trong hệ thống.
+            </p>
+
+        </form>
+
+    </main>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
